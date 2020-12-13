@@ -12,8 +12,8 @@ namespace UnitTest
 
             Console.WriteLine("This is a very simple console app for demonstrating unit tests and such, the following is example outputs for the functions that the logic contains: ");
             Console.WriteLine(calculation.CreateNewCalculation(1, 2));
-            Console.WriteLine(calculation.GetAllCalculations());
-            Console.WriteLine(calculation.GetCalculationsLargerThen1());
+            Console.WriteLine(string.Join(", ",calculation.GetAllCalculations()));
+            Console.WriteLine(string.Join(", ",calculation.GetCalculationsLargerThen1()));
             Console.WriteLine(calculation.GetSingleCalculation(Guid.NewGuid()));
 
         }
