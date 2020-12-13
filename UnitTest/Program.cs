@@ -14,6 +14,7 @@ namespace UnitTest
             Console.WriteLine(calculation.CreateNewCalculation(1, 2));
             Console.WriteLine(calculation.GetAllCalculations());
             Console.WriteLine(calculation.GetCalculationsLargerThen1());
+            Console.WriteLine(calculation.GetSingleCalculation(Guid.NewGuid()));
 
         }
     }
