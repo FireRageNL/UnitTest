@@ -22,7 +22,7 @@ namespace DemoApp
         {
             var calculations = _calculationRepository.GetallCalculations().ToList();
 
-            return calculations.Select(x => x).Where(x => x > 1).ToArray();
+            return calculations.Where(x => x > 1).ToArray();
         }
 
         public int GetSingleCalculation(Guid guid)
