@@ -25,6 +25,11 @@ namespace DemoApp
             return calculations.Select(x => x).Where(x => x > 1).ToArray();
         }
 
+        public int GetSingleCalculation(Guid guid)
+        {
+            return _calculationRepository.GetCalculationById(guid) * 2;
+        }
+
         public int CreateNewCalculation(int x, int y)
         {
             if (y <= 0 || x <= 0)
